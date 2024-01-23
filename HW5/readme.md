@@ -7,35 +7,35 @@
 4) выводы зафиксировать
 
 Установил связи между сервера и клиент при Swarm.
-![1](/image/1.1.png "1")
+![1](image/1.1.png)
 
 Создал два Dockerfile для веб-контейнера и БД-контейнера.
-![2](/image/1.2.png "2")
+![2](image/1.2.png)
 
 Создал файл docker-compose.yaml, в котором описвыаеются сервисы для двух контейнеров и сами окружения dev, prod, lab.
 В docker-compose.yaml нужно прописать 3 сервиса: web-dev, db-dev, web-prod, db-prod, web-lab, db-lab.
-![3](/image/1.3.png "3")
+![3](image/1.3.png)
 
 Создал файл dev.html, prod.html, lab.html , в которых описываеются название по каждому файлу.
-![4](/image/1.4.png "4")
+![4](image/1.4.png)
 
 Запускаем Docker Compose командой docker-compose up -d для создания и запуска контейнеров.
-![5](/image/1.5.png "5")
+![5](image/1.5.png)
 
 Проверяем, что на каждой ноде есть по 2 работающих контейнера. Для этого используем команду docker ps.
-![6](/image/1.6.png "6")
+![6](image/1.6.png)
 
 Вышел из docker-compose.Создал файл docker-compose.yaml для SWARM, в котором описвыаеются сервисы для двух контейнеров и сами окружения dev, prod, lab.
 В docker-compose-service.yaml нужно прописать 3 сервиса: web-dev, db-dev, web-prod, db-prod, web-lab, db-lab.
-![7](/image/1.7.png "7")
+![7](image/1.7.png)
 
 Создал сервисе при stack командой docker stack deploy --c docker-compose-service.yaml default
-![8](/image/1.8.png "8")
+![8](image/1.8.png)
 
 Проверяем, что на каждой ноде есть по 2 работающих контейнера. Для этого используем команду docker ps.
-![9](/image/1.9.png "9")
-![10](/image/2.0.png "10")
-![11](/image/2.1.png "11")
-![12](/image/2.2.png "12")
-![13](/image/2.3.png "13")
-![14](/image/2.4.png "14")
+![9](image/1.9.png)
+![10](image/2.0.png)
+![11](image/2.1.png)
+![12](image/2.2.png)
+![13](image/2.3.png)
+![14](image/2.4.png)
